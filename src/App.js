@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import Accordion from "./Components/Accordion";
 
 function App() {
+
+  const data = [
+    { 
+      title: 'How To Cancel Chase Card?', 
+      content: 'Lorem ipsum dolor sit amet consectetur. Ut parturient at volutpat dolor nunc cursus at rhoncus. Quis sit id tempus aliquam. Mauris felis purus morbi facilisis. Ullamcorper id consectetur ultricies nunc nunc enim accumsan porttitor.' 
+    },
+    { 
+      title: 'What is Global Web Pay Alternative?', 
+      content: 'Lorem ipsum dolor sit amet consectetur. Ut parturient at volutpat dolor nunc cursus at rhoncus. Quis sit id tempus aliquam. Mauris felis purus morbi facilisis. Ullamcorper id consectetur ultricies nunc nunc enim accumsan porttitor.' 
+    },
+    { 
+      title: 'What are BIC and SWIFT codes?', 
+      content: 'Lorem ipsum dolor sit amet consectetur. Ut parturient at volutpat dolor nunc cursus at rhoncus. Quis sit id tempus aliquam. Mauris felis purus morbi facilisis. Ullamcorper id consectetur ultricies nunc nunc enim accumsan porttitor.' 
+    },
+    { 
+      title: 'Explaining what Britains exit from the EU means?', 
+      content: 'Lorem ipsum dolor sit amet consectetur. Ut parturient at volutpat dolor nunc cursus at rhoncus. Quis sit id tempus aliquam. Mauris felis purus morbi facilisis. Ullamcorper id consectetur ultricies nunc nunc enim accumsan porttitor.' 
+    },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Accordion data={data} />
+    </>
   );
 }
 
+
+// live dependecy: font-family, 100vh, jerk animation
 export default App;
